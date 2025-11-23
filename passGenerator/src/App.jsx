@@ -2,11 +2,15 @@ import { useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const [length, setLength] = useState(8)
+  const [number, setNumber] = useState(false)
+  const [character, setCharacter] = useState(false)
+  const [password, setPassword] = useState('')
 
   return (
     <>
-      <h1 className='underline md:text-2xl text-amber-900 font-bold '>Hello World</h1>
+      <h1 className='text-4xl text-center font-bold text-white mt-6 '>Password Generator </h1>
     </>
   )
 }
